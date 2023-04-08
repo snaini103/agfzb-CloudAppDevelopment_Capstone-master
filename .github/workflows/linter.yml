@@ -1,11 +1,11 @@
-name: 'linter.yml'
-
+name: 'Lint Code'
+workflow_dispatch:
 on:
   push:
     branches: [master, main]
   pull_request:
     branches: [master, main]
-workflow_dispatch:
+
 jobs: # list of things to do
   lint_function_js:
     name: Linting JavaScript Function 
